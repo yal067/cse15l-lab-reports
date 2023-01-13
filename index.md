@@ -5,6 +5,6 @@
 - Once the Visual Studio Code is installed successfully, it should be look like this when you open it:<img width="761" alt="Screen Shot 2023-01-12 at 22 03 45" src="https://user-images.githubusercontent.com/122571811/212253011-84616609-3be1-4deb-8af1-bbdfe89387fe.png">
 2. 
 - Then, in the environment of Windows system, install Git from the website [Link](https://gitforwindows.org/)
-- After successfully installation, open Visual Studio Code and the terminal (or hold `Ctrl` and ``` to open the terminal).
+- After successfully installation, open Visual Studio Code and the terminal (or hold `Ctrl` and ` to open the terminal).
 - Open the command palette by holding `Ctrl` and `Shift` and `P`.
                                                                                

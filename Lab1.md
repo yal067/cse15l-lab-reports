@@ -6,7 +6,7 @@
 - Remember: Downloading correct version for your operating system is important!
 - Once the Visual Studio Code is installed successfully, it should be look like this when you open it:
 
-![Image]()
+![Image](Screen Shot 2023-01-12 at 22.03.45.png)
 
 
 ## 2. Remotely Connecting

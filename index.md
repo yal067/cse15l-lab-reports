@@ -9,7 +9,7 @@
 - Remember: It may take a few miniutes for the account and password to update and work!
 - Then, in the environment of Windows system, install Git from the [website](https://gitforwindows.org/)
 - After successfully installation, following the steps in this [post](https://gitforwindows.org/) to use git bash in Visual Studio Code.
-- Now, open the terminal in VScode((Ctrl or Command + `, or use the Terminal → New Terminal menu option). Type the following ```$ ssh cs15lwi23zz@ieng6.ucsd.edu``` in the terminal, but replace the '''zz''' by the letters in your course-specific account. 
+- Now, open the terminal in VScode((Ctrl or Command + `, or use the Terminal → New Terminal menu option). Type the following ```$ ssh cs15lwi23zz@ieng6.ucsd.edu``` in the terminal, but replace the ```zz``` by the letters in your course-specific account. 
 - 
 - 
 - 

@@ -35,7 +35,7 @@ NO WORRIES! Since it might be your first time to connect to this server.
 - After that, once you see ```Password:``` show up, then type the password of your course-specific account in the terminal. 
 - If you're successfully logged in, you should see see something like this: 
 
-![Image](imageName.png)
+![Image](Screen Shot 2023-01-14 at 21.45.32.png)
 
 ## 3. Trying Some Commands
 

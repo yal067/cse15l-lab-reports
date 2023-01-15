@@ -50,7 +50,7 @@ NO WORRIES! Since it might be your first time to connect to this server.
 
 Here is the example of what these commands should be look like:
 
-![Image](imageName.png)
+![Image](Screen Shot 2023-01-14 at 22.00.17.png)
 
 - Finally, if you want to log out of your remote connecting in your terminal, try using these:
 1. press Ctrl-D

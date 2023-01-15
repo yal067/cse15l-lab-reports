@@ -4,8 +4,9 @@
 
 - First, go to the Visual Studio Code [website](https://code.visualstudio.com/) to download and install the Visual Studio Code on your computer. 
 - Remember: Downloading correct version for your operating system is important!
-- Once the Visual Studio Code is installed successfully, it should be look like this when you open it:<img width="761" alt="Screen Shot 2023-01-12 at 22 03 45" src="https://user-images.githubusercontent.com/122571811/212253011-84616609-3be1-4deb-8af1-bbdfe89387fe.png">
-- ![Image](Screen Shot 2023-01-12 at 22.03.45.png)
+- Once the Visual Studio Code is installed successfully, it should be look like this when you open it:
+
+<img width="761" alt="Screen Shot 2023-01-12 at 22 03 45" src="https://user-images.githubusercontent.com/122571811/212253011-84616609-3be1-4deb-8af1-bbdfe89387fe.png">
 
 ## 2. Remotely Connecting
 
@@ -32,6 +33,7 @@ NO WORRIES! Since it might be your first time to connect to this server.
 - What you need to do next is just type ```yes``` and press enter.
 - After that, once you see ```Password:``` show up, then type the password of your course-specific account in the terminal. 
 - If you're successfully logged in, you should see see something like this: 
+
 <img width="719" alt="Screen Shot 2023-01-14 at 21 45 32" src="https://user-images.githubusercontent.com/122571811/212524906-3a2f071f-10bf-4001-aa97-02b4c453b29c.png">
 
 ## 3. Trying Some Commands
@@ -45,7 +47,10 @@ NO WORRIES! Since it might be your first time to connect to this server.
 4. ```ls -a```
 5. ```cat /home/linux/ieng6/cs15lwi23/public/hello.txt``` 
 
-Here is the example of what these commands should be look like:<img width="761" alt="Screen Shot 2023-01-14 at 22 00 17" src="https://user-images.githubusercontent.com/122571811/212525555-0151ffd8-9ca2-4fc5-b556-844186f6b877.png">
+Here is the example of what these commands should be look like:
+
+<img width="761" alt="Screen Shot 2023-01-14 at 22 00 17" src="https://user-images.githubusercontent.com/122571811/212525555-0151ffd8-9ca2-4fc5-b556-844186f6b877.png">
+
 - Finally, if you want to log out of your remote connecting in your terminal, try using these:
 1. press Ctrl-D
 2. type ```exit```

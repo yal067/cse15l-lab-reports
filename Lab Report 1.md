@@ -31,7 +31,7 @@ NO WORRIES! Since it might be your first time to connect to this server.
 - If you're successfully logged in, you should see see something like this: 
 <img width="719" alt="Screen Shot 2023-01-14 at 21 45 32" src="https://user-images.githubusercontent.com/122571811/212524906-3a2f071f-10bf-4001-aa97-02b4c453b29c.png">
 
-## 3. Remotely Connecting
+## 3. Trying Some Commands
 
 - Now, let's try run some different commands on the remote computer using the terminal in VScode.
 - Here are some examples that you can try: 

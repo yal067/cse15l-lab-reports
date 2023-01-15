@@ -11,7 +11,7 @@
 ## 2. Remotely Connecting
 
 - First, using the [Link](https://sdacs.ucsd.edu/~icc/index.php) to look up your course-specific account for CSE 15.
-- Here is the [tutorial]((https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit))that helps you reset your password for the course-specific account.
+- Here is the [tutorial](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit) that helps you reset your password for the course-specific account.
 - Remember: It may take a few miniutes for the account and password to update and work!
 - Then, in the environment of Windows system, install Git from the [website](https://gitforwindows.org/)
 - After successfully installation, following the steps in this [post](https://gitforwindows.org/) to use git bash in Visual Studio Code.

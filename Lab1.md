@@ -48,7 +48,7 @@ NO WORRIES! Since it might be your first time to connect to this server.
 
 2. ```ls```
 
-(This command lists the files and folders in the given path)
+ (This command lists the files and folders in the given path)
 
 3. ```ls -lat```
 
@@ -60,7 +60,7 @@ NO WORRIES! Since it might be your first time to connect to this server.
 
 5. ```cat /home/linux/ieng6/cs15lwi23/public/hello.txt``` 
 
-(This command prints the contents of files in the given path)
+ (This command prints the contents of files in the given path)
 
 Here is the example of what these commands should be look like:
 
@@ -71,4 +71,5 @@ Interesting! By typing serveral simple letters, you can easily access and see th
 - Finally, if you want to log out of your remote connecting in your terminal, try using these:
 1. press Ctrl-D
 2. type ```exit```
+
 （Either one of these steps can log out of your remote connecting easily!)

@@ -66,7 +66,7 @@ Here is the example of what these commands should be look like:
 
 ![Image](Screen Shot 2023-01-14 at 22.00.17.png)
 
-Interesting! By typing serveral simple letters, you can easily access the contents of some files that saved in the computer. Those above are all useful commands that you should try! 
+Interesting! By typing serveral simple letters, you can easily access and see the contents of files that saved in the computer. Those above are all useful commands that you should try on your own! 
 
 - Finally, if you want to log out of your remote connecting in your terminal, try using these:
 1. press Ctrl-D

@@ -42,31 +42,21 @@ NO WORRIES! Since it might be your first time to connect to this server.
 - Now, let's try run some different commands on the remote computer using the terminal in VScode.
 - Here are some examples that you can try: 
 
-1. ```pwd```
+1. ```pwd```(This command basically prints current working directory)
 
-(This command basically prints current working directory)
+2. ```ls```(This command lists the files and folders the given path)
 
-2. ```ls```
+3. ```ls -lat```(This command displays all the files and folders by the given path in a long listing format and sort by modification time)
 
- (This command lists the files and folders in the given path)
+4. ```ls -a```(This command displays all the files including hidden files in the given path)
 
-3. ```ls -lat```
-
-(
-
-4. ```ls -a```
-
-
-
-5. ```cat /home/linux/ieng6/cs15lwi23/public/hello.txt``` 
-
- (This command prints the contents of files in the given path)
+5. ```cat /home/linux/ieng6/cs15lwi23/public/hello.txt``` (This command prints the contents of files in the given path)
 
 Here is the example of what these commands should be look like:
 
 ![Image](Screen Shot 2023-01-14 at 22.00.17.png)
 
-Interesting! By typing serveral simple letters, you can easily access and see the contents of files that saved in the computer. Those above are all useful commands that you should try on your own! 
+Interesting! By typing serveral simple letters, you can not only easily access and see the contents of files that saved in the computer, but also get a whole list of files sort by time. Those above are all useful commands that you should try on your own! 
 
 - Finally, if you want to log out of your remote connecting in your terminal, try using these:
 1. press Ctrl-D

@@ -62,4 +62,4 @@ Here is the example of what these commands should be look like:
 
 （Either one of these steps can log out of your remote connecting easily!)
 
-Interesting! Even we are physically distant, we are still able to manipulate another computer through remote connecting steps exhibited above. More importantly, by typing serveral simple letters, you can not only easily access and see the contents of files that saved in the remote computer, but also get a whole list of files sort by time. Those above are all useful commands that you should try on your own!
+Interesting! Even we are physically distant, we are still able to manipulate another computer through remote-connecting steps exhibited above. More importantly, by typing serveral simple letters in the command, you can not only easily access and see the contents of files that saved in the remote computer, but also get a whole list of files sort by time in the given path. Those above are all useful commands that you should try on your own!

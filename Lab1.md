@@ -42,7 +42,7 @@ NO WORRIES! Since it might be your first time to connect to this server.
 - Now, let's try run some different commands on the remote computer using the terminal in VScode.
 - Here are some examples that you can try: 
 
-1. ```pwd```(This command basically prints current working directory)
+1. ```pwd```(This command prints current working directory)
 
 2. ```ls```(This command lists the files and folders the given path)
 
@@ -54,12 +54,12 @@ NO WORRIES! Since it might be your first time to connect to this server.
 
 Here is the example of what these commands should be look like:
 
-![Image](Screen Shot 2023-01-14 at 22.00.17.png)
-
-Interesting! By typing serveral simple letters, you can not only easily access and see the contents of files that saved in the computer, but also get a whole list of files sort by time. Those above are all useful commands that you should try on your own! 
+![Image](Screen Shot 2023-01-14 at 22.00.17.png) 
 
 - Finally, if you want to log out of your remote connecting in your terminal, try using these:
 1. press Ctrl-D
 2. type ```exit```
 
 （Either one of these steps can log out of your remote connecting easily!)
+
+Interesting! Even we are physically distant, we are still able to manipulate another computer through remote connecting steps exhibited above. More importantly, by typing serveral simple letters, you can not only easily access and see the contents of files that saved in the remote computer, but also get a whole list of files sort by time. Those above are all useful commands that you should try on your own!

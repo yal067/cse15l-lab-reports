@@ -87,5 +87,5 @@ replace them sequentially in arr.
 # Part 3
 One thing I learned from Lab 2 was that we can literaly write a web server using java in Visual Studio Code. More interestingly, we can write
 specific codes to make web server support the path and behavior based on what we want to display. What's more, except running web server on
-our local machine, we can also run it remotely, this says we can also access the web server using remote computers, which is very cool!
+our local machine, we can also run it remotely, this says we can also access the web server using remote computers, which is very cool to learn.
 

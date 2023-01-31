@@ -1,4 +1,76 @@
 # Lab Report 1
+
+# Part 1
+
+## The code for StringServer
+```
+import java.io.IOException;
+import java.net.URI;
+
+class Handler implements URLHandler {
+    String words = "";
+
+    public String handleRequest(URI url) {
+        System.out.println("Path: " + url.getPath());
+        if (url.getPath().contains("/add-message")) {
+            String[] parameters = url.getQuery().split("=");
+            if (parameters[0].equals("s")) {
+                words = words + parameters[1] + "\n";
+            }
+            return words;
+        }
+        else {
+            return "  ";
+        }
+    }
+
+}
+class StringServer{
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing words! Try any word");
+            return;
+        }
+        int port = Integer.parseInt(args[0]);
+        Server.start(port, new Handler());
+    }
+}
+
+  ```
+
+## First screenshot of using /add-message
+
+![Image](Screen Shot 2023-01-30 at 18.16.41.png)
+
+## Which methods in your code are called?
+
+The methods of handleRequest, getPath, contains, getQuery, split, equals, and start are called.
+
+## What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+
+1. The relevant argument to handleRequest is url in type URI.
+2. The relevant argument to getPath is the url in type URI, but its output value should be the string that contains the part of the url after the domain and before any ?.
+3. The relevant argument to contains is "/add-message" in type of String.
+4. The relevant argument to getQuery is the url in type URI, but its output value should be the string that contains the part of the URL after the first ? and before the anchor.
+5. The relevant argument to split is the "=" in type of String.
+6. The relevant argument to equals is the "s" in type of String.
+
+## How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+
+1. The value of handleRequest becomes localhost:4000/add-message?s=Hello in type URI.
+2. The value of getPath becomes localhost:4000/add-message?s=Hello in type URI, and its output value becomes "/add-message".
+3. The value of contains is still "/add-message" in type of String, because this method is mainly for checking whether the Path contains "/add-message".
+4. The value of getQuery becomes localhost:4000/add-message?s=Hello in type URI, and its output value becomes "s=Hello".
+5. The value of split is still "=" in type of String, because this method is mainly for spliting the Query by "=".
+6. The value of equals is still "s" in type of String, because this method is mainly for checking whether the Query is in a supporting form.
+
+
+## Second screenshot of using /add-message
+
+![Image](Screen Shot 2023-01-30 at 18.17.08.png)
+
+
+
 # Part 2
 
 ## The bug from reverseInPlace method in ArrayExamples.java

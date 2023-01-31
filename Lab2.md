@@ -48,7 +48,7 @@ The methods of handleRequest, getPath, contains, getQuery, split, equals, and st
 
 ## What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 
-1. The relevant argument to handleRequest is url in type URI, the value should be new URI("http://localhost:4000/add-message?s=Hello").
+1. The relevant argument to handleRequest is url in type URI, the value should be new URI("localhost:4000/add-message?s=Hello").
 2. The relevant argument to getPath is the url in type URI and the value is same from 1, but its output value should be the string that contains the part of the url after the domain and before any ?.
 3. The relevant argument and value to the method of contains are "/add-message" in type of String.
 4. The relevant argument to getQuery is the url in type URI and the value is same from 1, but its output value should be the string that contains the part of the URL after the first ? and before the anchor.
@@ -77,7 +77,7 @@ The methods of handleRequest, getPath, contains, getQuery, split, equals are cal
 
 ## What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 
-1. The relevant argument to handleRequest is url in type URI, the value should be new URI("http://localhost:4000/add-message?s=How are you?").
+1. The relevant argument to handleRequest is url in type URI, the value should be new URI("localhost:4000/add-message?s=How are you?").
 2. The relevant argument to getPath is the url in type URI and the value is same from 1, but its output value should be the string that contains the part of the url after the domain and before any ?.
 3. The relevant argument and value to the method of contains are "/add-message" in type of String.
 4. The relevant argument to getQuery is the url in type URI and the value is same from 1, but its output value should be the string that contains the part of the URL after the first ? and before the anchor.
@@ -93,7 +93,7 @@ The methods of handleRequest, getPath, contains, getQuery, split, equals are cal
 4. The value of getQuery becomes localhost:4000/add-message?s=Hello in type URI, and its output value becomes "s=How are you?".
 5. The value of split is still "=" in type of String, because this method is mainly for spliting the Query by "=".
 6. The value of equals is still "s" in type of String, because this method is mainly for checking whether the Query is in a supporting form.
-7. 7. The value of start in port becomes the Integer.parseInt(args[0]) based on the input.
+7. The value of start in port becomes the Integer.parseInt(args[0]) based on the input.
 
 # Part 2
 

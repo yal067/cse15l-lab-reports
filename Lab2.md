@@ -49,21 +49,24 @@ The methods of handleRequest, getPath, contains, getQuery, split, equals, and st
 ## What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 
 1. The relevant argument to handleRequest is url in type URI, the value should be new URI("localhost:4000/add-message?s=Hello").
-2. The relevant argument to getPath is the url in type URI and the value is same from 1, but its output value should be the string that contains the part of the url after the domain and before any ?.
+2. There is no argument that was passed into the method of getPath, but its output value should be the string that contains the part of the url after the domain and before any ?.
 3. The relevant argument and value to the method of contains are "/add-message" in type of String.
-4. The relevant argument to getQuery is the url in type URI and the value is same from 1, but its output value should be the string that contains the part of the URL after the first ? and before the anchor.
+4. There is no argument that was passed into the method of getQuery, but its output value should be the string that contains the part of the url after the first ? and before the anchor.
 5. The relevant argument and value to the method of split are the "=" in type of String.
 6. The relevant argument and value to the method of equals are the "s" in type of String.
 7. The relevant argument and value to the method of start are port in type of Integer and the new Handler().
 
 ## How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
-1. The value of handleRequest becomes localhost:4000/add-message?s=Hello in type URI.
-2. The value of getPath becomes localhost:4000/add-message?s=Hello in type URI, and its output value becomes "/add-message".
-3. The value of contains is still "/add-message" in type of String, because this method is mainly for checking whether the Path contains "/add-message".
-4. The value of getQuery becomes localhost:4000/add-message?s=Hello in type URI, and its output value becomes "s=Hello".
-5. The value of split is still "=" in type of String, because this method is mainly for spliting the Query by "=".
-6. The value of equals is still "s" in type of String, because this method is mainly for checking whether the Query is in a supporting form.
+1. The value of handleRequest is localhost:4000/add-message?s=Hello in type URI.
+2. The method of getPath extracts the part of url (localhost:4000/add-message?s=Hello) after the domain and before any ? and return the extracted part into a String type. Thus, its output value becomes "/add-message" in type of String.
+3. The value of contains is still "/add-message" in type of String, as this method is mainly for checking whether the extracted Path contains "/add-message". If the method of contains works and the extracted path does contain "/add-message", then url will be used again in the next line of codes under if statement.
+4. The method of getQuery extracts the part of url (localhost:4000/add-message?s=Hello) after the first ? and before the anchor and return the extracted part into a String type. Thus, its output value becomes "s=Hello" in type of String.
+5. The value of split is still "=" in type of String, as this method is mainly for spliting the Query by "=". Then, by creating a Stringlist-parameters, the string before "=" in Query part becomes an element in parameters at index 0, and the string after "=" becomes an element in parameters at index 1.
+6. The value of equals is still "s" in type of String, because this method is mainly for checking whether the Query is in a supporting form. Therefore, if the element in parameters at index 0 equals "s", then the element in parameters at index 1 will be used in the next line under if statement.
+
+(Once the form of url passes two if statements, then by different methods, the element (in the type of String) from parameters at index 1 will be added to an empty string-words in new line).
+
 7. The value of start in port becomes the Integer.parseInt(args[0]) based on the input.
 
 
@@ -78,9 +81,9 @@ The methods of handleRequest, getPath, contains, getQuery, split, equals, and st
 ## What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 
 1. The relevant argument to handleRequest is url in type URI, the value should be new URI("localhost:4000/add-message?s=How are you?").
-2. The relevant argument to getPath is the url in type URI and the value is same from 1, but its output value should be the string that contains the part of the url after the domain and before any ?.
+2. There is no argument that was passed into the method of getPath, but its output value should be the string that contains the part of the url after the domain and before any ?.
 3. The relevant argument and value to the method of contains are "/add-message" in type of String.
-4. The relevant argument to getQuery is the url in type URI and the value is same from 1, but its output value should be the string that contains the part of the URL after the first ? and before the anchor.
+4. There is no argument that was passed into the method of getQuery, but its output value should be the string that contains the part of the url after the first ? and before the anchor.
 5. The relevant argument and value to the method of split are the "=" in type of String.
 6. The relevant argument and value to the method of equals are the "s" in type of String.
 7. The relevant argument and value to the method of start are port in type of Integer and the new Handler().

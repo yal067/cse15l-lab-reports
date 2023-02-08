@@ -155,7 +155,7 @@ The actual output is {0}
  
  One test (testReverseInPlace) passed successfully and one test (testReverseInPlace2) failed.
  
- From testReverseInPlace2, we can tell the element begins to be incorrect from certain index position. This says, when the for loop iterates to a certain i(the index position of arr), ```arr[i] = arr[arr.length - i - 1]``` started to make the mistake and caused the problem. To fix the problem, we need to focus on changing the code on ```arr[i] = arr[arr.length - i - 1]```.
+ From testReverseInPlace2, we can tell the element from updated arr begins to be incorrect since certain index position. This says, when the for loop iterates to a certain i(the index position of arr), ```arr[i] = arr[arr.length - i - 1]``` starts to make the mistake and caused the problem of the wrong output. To fix the problem, we need to focus on changing the code on ```arr[i] = arr[arr.length - i - 1]``` and find a correct way to sequentially place each element from each index in a reversing order.
  
 ## 4. The bug, as the before-and-after code change required to fix it
 

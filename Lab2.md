@@ -62,10 +62,10 @@ The methods of handleRequest, getPath, contains, getQuery, split, equals, and st
 2. The method of getPath extracts the part of url (localhost:4000/add-message?s=Hello) after the domain and before any ? and return the extracted part into a String type. Thus, its output value becomes "/add-message" in type of String.
 3. The value of contains is still "/add-message" in type of String, as this method is mainly for checking whether the extracted Path contains "/add-message". If the method of contains works and the extracted path does contain "/add-message", then url will be used again in the next line of codes under if statement.
 4. The method of getQuery extracts the part of url (localhost:4000/add-message?s=Hello) after the first ? and before the anchor and return the extracted part into a String type. Thus, its output value becomes "s=Hello" in type of String.
-5. The value of split is still "=" in type of String, as this method is mainly for spliting the Query by "=". Then, by creating a Stringlist-parameters, the string before "=" in Query part becomes an element in parameters at index 0, and the string after "=" becomes an element in parameters at index 1.
-6. The value of equals is still "s" in type of String, because this method is mainly for checking whether the Query is in a supporting form. Therefore, if the element in parameters at index 0 equals "s", then the element in parameters at index 1 will be used in the next line under if statement.
+5. The value of split is still "=" in type of String, as this method is mainly for spliting the Query by "=". Then, by creating a Stringlist-parameters, the string "s" before "=" in Query part becomes an element in parameters at index 0, and the string "Hello" after "=" becomes an element in parameters at index 1.
+6. The value of equals is still "s" in type of String, because this method is mainly for checking whether the Query is in a supporting form. Therefore, if the element in parameters at index 0 equals "s", then the element "Hello" in parameters at index 1 will be used in the next line of codes under if statement.
 
-(Once the form of url passes two if statements, then by different methods, the element (in the type of String) from parameters at index 1 will be added to an empty string-words in new line).
+(Based on above stpes, once the form of url passes two if statements, then through different methods, the extracted String element "Hello" from url in parameters at index 1 will be added to an empty string```words``` in a new line).
 
 7. The value of start in port becomes the Integer.parseInt(args[0]) based on the input.
 
@@ -90,12 +90,15 @@ The methods of handleRequest, getPath, contains, getQuery, split, equals, and st
 
 ## How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
-1. The value of handleRequest becomes localhost:4000/add-message?s=How are you? in type URI.
-2. The value of getPath becomes localhost:4000/add-message?s=How are you? in type URI, and its output value becomes "/add-message".
-3. The value of contains is still "/add-message" in type of String, because this method is mainly for checking whether the Path contains "/add-message".
-4. The value of getQuery becomes localhost:4000/add-message?s=Hello in type URI, and its output value becomes "s=How are you?".
-5. The value of split is still "=" in type of String, because this method is mainly for spliting the Query by "=".
-6. The value of equals is still "s" in type of String, because this method is mainly for checking whether the Query is in a supporting form.
+1. The value of handleRequest is localhost:4000/add-message?s=How are you? in type URI.
+2. The method of getPath extracts the part of url (localhost:4000/add-message?s=How are you?) after the domain and before any ? and return the extracted part into a String type. Thus, its output value becomes "/add-message" in type of String.
+3. The value of contains is still "/add-message" in type of String, as this method is mainly for checking whether the extracted Path contains "/add-message". If the method of contains works and the extracted path does contain "/add-message", then url will be used again in the next line of codes under if statement.
+4. The method of getQuery extracts the part of url (localhost:4000/add-message?s=How are you?) after the first ? and before the anchor and return the extracted part into a String type. Thus, its output value becomes "s=How are you?" in type of String.
+5. The value of split is still "=" in type of String, as this method is mainly for spliting the Query by "=". Then, by creating a Stringlist-parameters, the string "s" before "=" in Query part becomes an element in parameters at index 0, and the string "How are you?" after "=" becomes an element in parameters at index 1.
+6. The value of equals is still "s" in type of String, because this method is mainly for checking whether the Query is in a supporting form. Therefore, if the element in parameters at index 0 equals "s", then the element "How are you?" in parameters at index 1 will be used in the next line of codes under if statement.
+
+(Based on above stpes, once the form of url passes two if statements, then through different methods, the extracted String element "How are you?" from url in parameters at index 1 will be added to an empty string```words``` in a new line).
+
 7. The value of start in port becomes the Integer.parseInt(args[0]) based on the input.
 
 # Part 2
@@ -147,9 +150,6 @@ The actual output is {0}
 
 ## 3. The symptom, as the output of running the tests 
  
- Using the two inputs above:
- ![Image](Screen Shot 2023-01-29 at 16.09.17.png)
- 
  The output of running the test:
  ![Image](Screen Shot 2023-01-29 at 16.09.42.png)
  
@@ -178,12 +178,7 @@ static void reverseInPlace(int[] arr) {
     }
 }
  ```
-The reason why the reverseInPlace method is buggy is mainly becuase when it iterates through every element in the arr by reversing order, 
-the element in arr in each index is also changed accordingly. So the elements we get from arr during for loop is no longer in their original 
-order or position. Thus, to fix the problem, we first need to make a newArray that contains all the elements in arr with the same length. By 
-this way, we can deeply copy the input - arr and make sure all the elements that we extract later will be in their original order. Then to 
-change the order of elements, we can employ for loop to iterate through all the elements that saved in newArray in reversing order and 
-replace them sequentially in arr.
+When this method iterates through every element in the arr and place each of them by reversing order, it also changes the value of each element in original index from original arr. This says, when we try to replace  elements in first several index positions using the elements from last several index, we also lost the original elements in first several index positions. As a result, we are unable to extract those being replaced elements from beginning of the arrcand put them on the reversing positions. In other words, as the for loop iterates to a certain index position, ```newArray[arr.length - i - 1]``` will begin to extract elements that's being updated which is not the same one as original. Therefore, the reverseInPlace method is buggy. Thus, to fix the problem, we first need to make a newArray that contains all the elements in arr with the same length. By this way, we can deeply copy the input - arr and make sure all the elements that we extract later will be in their original order. Then to change the order of elements, we can employ for loop to iterate through all the elements that saved in newArray in reversing order and replace them sequentially in arr.
 
 # Part 3
 One thing I learned from Lab 2 was that we can literaly write a web server using java in Visual Studio Code. More interestingly, we can write

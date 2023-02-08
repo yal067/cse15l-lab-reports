@@ -1,4 +1,4 @@
-# Lab Report 1
+# Lab Report 2
 
 # Part 1
 
@@ -65,7 +65,7 @@ The methods of handleRequest, getPath, contains, getQuery, split, equals, and st
 5. The value of split is still "=" in type of String, as this method is mainly for spliting the Query by "=". Then, by creating a Stringlist-parameters, the string "s" before "=" in Query part becomes an element in parameters at index 0, and the string "Hello" after "=" becomes an element in parameters at index 1.
 6. The value of equals is still "s" in type of String, because this method is mainly for checking whether the Query is in a supporting form. Therefore, if the element in parameters at index 0 equals "s", then the element "Hello" in parameters at index 1 will be used in the next line of codes under if statement.
 
-(Based on above stpes, once the form of url passes two if statements, then through different methods, the extracted String element "Hello" from url in parameters at index 1 will be added to an empty string```words``` in a new line).
+Based on above stpes, once the form of url passes two if statements, then the extracted String element "Hello" from url in parameters at index 1 will be added to an empty string ```words``` in a new line.
 
 7. The value of start in port becomes the Integer.parseInt(args[0]) based on the input.
 
@@ -97,7 +97,7 @@ The methods of handleRequest, getPath, contains, getQuery, split, equals, and st
 5. The value of split is still "=" in type of String, as this method is mainly for spliting the Query by "=". Then, by creating a Stringlist-parameters, the string "s" before "=" in Query part becomes an element in parameters at index 0, and the string "How are you?" after "=" becomes an element in parameters at index 1.
 6. The value of equals is still "s" in type of String, because this method is mainly for checking whether the Query is in a supporting form. Therefore, if the element in parameters at index 0 equals "s", then the element "How are you?" in parameters at index 1 will be used in the next line of codes under if statement.
 
-(Based on above stpes, once the form of url passes two if statements, then through different methods, the extracted String element "How are you?" from url in parameters at index 1 will be added to an empty string```words``` in a new line).
+Based on above stpes, once the form of url passes two if statements, then the extracted String element "How are you?" from url in parameters at index 1 will be added to an empty string ```words``` in a new line.
 
 7. The value of start in port becomes the Integer.parseInt(args[0]) based on the input.
 
@@ -155,6 +155,8 @@ The actual output is {0}
  
  One test (testReverseInPlace) passed successfully and one test (testReverseInPlace2) failed.
  
+ From testReverseInPlace2, we can tell the element begins to be incorrect from certain index position. This says, when the for loop iterates to a certain i(the index position of arr), ```arr[i] = arr[arr.length - i - 1]``` started to make the mistake and caused the problem. To fix the problem, we need to focus on changing the code on ```arr[i] = arr[arr.length - i - 1]```.
+ 
 ## 4. The bug, as the before-and-after code change required to fix it
 
 The before-code:
@@ -178,7 +180,8 @@ static void reverseInPlace(int[] arr) {
     }
 }
  ```
-When this method iterates through every element in the arr and place each of them by reversing order, it also changes the value of each element in original index from original arr. This says, when we try to replace  elements in first several index positions using the elements from last several index, we also lost the original elements in first several index positions. As a result, we are unable to extract those being replaced elements from beginning of the arrcand put them on the reversing positions. In other words, as the for loop iterates to a certain index position, ```newArray[arr.length - i - 1]``` will begin to extract elements that's being updated which is not the same one as original. Therefore, the reverseInPlace method is buggy. Thus, to fix the problem, we first need to make a newArray that contains all the elements in arr with the same length. By this way, we can deeply copy the input - arr and make sure all the elements that we extract later will be in their original order. Then to change the order of elements, we can employ for loop to iterate through all the elements that saved in newArray in reversing order and replace them sequentially in arr.
+When this method iterates through every element in the arr and place each of them by reversing order, it also changes the value of each element in original index from arr. This says, when we try to replace elements ```arr[i]``` in first several index positions using the elements ```arr[arr.length - i - 1]``` from last several index, we also lost the original elements that stored in first several index positions from arr. As a result, we are unable to retrieval those being replaced elements later and put them to the reversing index positions. In other words, as the for loop iterates to a certain index position, ```arr[arr.length - i - 1]``` will begin to extract elements that are being updated already, which are not the same elements exist in original arr anymore. Therefore, the reverseInPlace method is buggy, in which its updated arr will contain different elements from our expectation. Thus, to fix the problem, we first need to make a newArray that contains all the elements in arr with the same length. By this way, we can deeply copy the input - arr and make sure all the elements that we extract later will be in their original order. Then to change the order of elements, we can employ for loop to iterate through all the elements that saved in newArray in reversing order and replace them sequentially in arr.
+(There is another solution to fix this problem! But the only way I can think of is creating a new array).
 
 # Part 3
 One thing I learned from Lab 2 was that we can literaly write a web server using java in Visual Studio Code. More interestingly, we can write

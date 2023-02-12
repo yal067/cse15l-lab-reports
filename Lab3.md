@@ -1,6 +1,6 @@
 # Lab Report 3
 
-## The command ```grep```
+# The command ```grep```
 
 ## ```grep -nr```
 
@@ -218,3 +218,4 @@ But even after decoherence sets in, geometry is busy all the time trying to buil
 This command-line searches the word "whatever" from the file *ch10.txt* given by ```./written_2/non-fiction/OUP/Kauffman/ch10.txt```. Even though this file contains the upper case of the "W" in "Whatever", but this command will search the string "whatever" ignoring the case. Therefore, its output will be the content of lines that has "Whatever" no matter the letter case.
 ```egrep -i``` is very useful becuase the users can find the specific contents that containing certain "string" successfully even with case error, in which users will not be bothered by minor mistake of the case when searching for words. 
 
+**All these command-line options for ```grep``` are very interesting and useful, in which users can easilly access the information of the contens that include certain "string" from a file or within a direcotry. I personally think it's very cool that ```grep``` can do so many searching and displaying jobs for us, and the only thing we need to do is to type those several letters in the terminal!**

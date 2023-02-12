@@ -159,4 +159,4 @@ This command-line counts the occurence of the string "was" in all the files from
 This command's output shows all the files from *berlitz2* with the occurence of the string "was" in each file. For example, "was" occurs 11
 times in the file *Vallarta-WhereToGo.txt*.
 ```grep -c``` is very convenient for users becuase they can not only easily get the occurence of "string" in a specifc file without the need to count the "string" manually in a time-consuming way,
-but this command can also display all the files from the given path along with the occurence of specifc "string" in each file.
+but it can also display all the files from the given path along with the occurence of specifc "string" in each file.

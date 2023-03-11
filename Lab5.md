@@ -14,7 +14,7 @@
 
 ## The alternative way of doing this lab report 3 - find
 
-I will use the [website]([https://code.visualstudio.com/](https://linuxconfig.org/find)) to find some useful examples about the command - find
+I will use the [website]([https://code.visualstudio.com/](https://linuxconfig.org/find)) to find some useful examples about the command ```find```
 
 **find . -type f -name "files" -delete** 
 

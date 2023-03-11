@@ -8,7 +8,7 @@
 
 2.After finding all the examples that seem useful or interesting, then try those commanda on files and directories from *./written_2*. For example: typing the command: ```grep -nr "Lucayans"``` in the terminal, the output will print the file's name that contains "Lucayans" which is *Bahamas-History.txt*, exhibits the line number that contains "Lucayans" in *Bahamas-History.txt* which is line 6 and line 7, and displays the content in those two specific lines.
 
-3.Then, copying and pasting those to the file, and explaining the fuction of this command and the reason to pick this one as an example.
+3.Then, copying and pasting those to the file, and explaining the fuction of each specific command and the reason to pick this one as an example.
 
 ## The alternative way of doing this lab report 3
 

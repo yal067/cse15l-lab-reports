@@ -1,6 +1,6 @@
 # Lab Report 5
 
-# The process of doing lab report 3 and some alternative ways
+# The process of doing lab report 3 and an alternative way doing it
 
 ## Going into detail on how to do the task of lab report 3
 

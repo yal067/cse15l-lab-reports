@@ -10,6 +10,8 @@
 
 3.Then, copying and pasting those to the file, and explaining the fuction of each specific command and the reason to pick this one as an example.
 
+4.Importantly, don't forget to mention the references or resources where you find those useful commands.
+
 ## The alternative way of doing this lab report 3
 
 I will use the website [website]([https://code.visualstudio.com/](https://linuxconfig.org/find)) to find some useful examples about the command ```find```
